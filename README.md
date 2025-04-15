@@ -1,32 +1,35 @@
 # 😄 Smile Detection App
 
-This is a Python app that uses your **computer’s webcam** to detect **faces and smiles** in real-time.
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.11-green)](https://opencv.org/)
+![Status](https://img.shields.io/badge/Project-Live-brightgreen)
+
+This is a **real-time smile detection app** built with Python and OpenCV. It uses your **webcam** to detect **faces and smiles** using pre-trained machine learning models.
 
 ---
 
 ## 💡 How It Works
 
-- Uses **OpenCV** to access your webcam and process the video.
-- Two pre-trained Haar Cascade classifiers:
-  - `haarcascade_frontalface_default.xml` — face detection
-  - `haarcascade_smile.xml` — smile detection
-- **Blue rectangle** = face detected
-- **Green rectangle** = smile detected
-- Press `q` to quit
+- Uses your **webcam** to capture live video
+- Detects **faces** using `haarcascade_frontalface_default.xml`
+- Detects **smiles** using `haarcascade_smile.xml`
+- Draws:
+  - 🟦 Blue rectangle around faces
+  - 🟩 Green rectangle around smiles
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
-- OpenCV
-- Haar Cascade Classifiers (OpenCV GitHub)
+- 🐍 Python 3.10+
+- 🧠 OpenCV 4.11
+- 📦 Haar Cascade Classifiers (from OpenCV GitHub)
 
 ---
 
 ## 🚀 How to Run It
 
+1. Install the required library:
+
 ```bash
 pip install opencv-python
-python main.py
-
